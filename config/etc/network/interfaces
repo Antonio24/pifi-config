@@ -16,8 +16,6 @@ iface wlan0 inet static
 address 192.168.11.1
 netmask 255.255.255.0
 
-up iptables-restore < /etc/iptables.ipv4.nat
-
 #iface br0 inet dhcp
 #	bridge_fd 1
 #	bridge_hello 3
@@ -30,3 +28,4 @@ up iptables-restore < /etc/iptables.ipv4.nat
 #iface wlan0 inet manual
 #wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 
+up iptables-restore < /etc/iptables.ipv4.nat

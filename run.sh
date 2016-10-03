@@ -68,6 +68,25 @@ function setup_iptables() {
 	#sudo iptables -t nat -A BYPASS -d www.youku.com -j ACCEPT
 }
 
+function start_and_save_dhcp() {
+	sudo service isc-dhcp-server start
+	sudo update-rc.d isc-dhcp-server enable
+}
+
+function start_and_save_hostapd() {
+	sudo service hostapd start
+	sudo update-rc.d hostapd enable
+}
+
+function start_and_save_openvpn() {
+	sudo service openvpn start
+	sudo update-rc.d openvpn enable
+}
+
+function dump_boot_log() {
+	cat /var/log/syslog
+}
+
 start_openvpn $USA
 sleep 10s
 setup_iptables
