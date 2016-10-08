@@ -46,7 +46,6 @@
 	5. install other software
 
 		sudo apt-get install dnsmasq
-		sudo apt-get install wpa_supplicant
 		sudo apt-get install iptables
 		sudo apt-get install openvpn
 

@@ -6,7 +6,6 @@ confs=(etc/default/openvpn \
 	   etc/hostapd/hostapd.conf \
 	   etc/network/interfaces \
 	   etc/openvpn/update-resolv-conf \
-	   etc/wpa_supplicant/wpa_supplicant.conf \
 	   etc/iptables.ipv4.nat \
 	   etc/sysctl.conf \
 	   etc/init.d/openvpn \
