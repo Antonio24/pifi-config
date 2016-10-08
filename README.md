@@ -61,7 +61,7 @@
 
 		buy a VPN service and download the .ovpn setting files
 		change the .ovpn suffix into .conf
-		put it into /etc/openvpn folder
+		put it into raspberry pi /etc/openvpn folder
 		for detail infos, please see the official openvpn doc:
 		https://openvpn.net/
 
